@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GenericIsland.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GenericBoat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TestEnemy.tscn" type="PackedScene" id=4]
+
+[node name="World" type="Node2D"]
+
+[node name="GenericIsland" parent="." instance=ExtResource( 2 )]
+
+[node name="GenericBoat" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1265.8, 1117.59 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 512, 320 )
+Swimming = true
+
+[node name="TestEnemy" parent="." instance=ExtResource( 4 )]
